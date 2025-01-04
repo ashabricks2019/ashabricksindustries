@@ -1,0 +1,99 @@
+
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    if (name && email && message) {
+        emailjs.send("service_fb3bgpr", "template_wopeunp", {
+            name: name,
+            email: email,
+            message: message,
+        }).then(
+            function(response) {
+                alert('Your message has been sent!');
+            },
+            function(error) {
+                alert('Failed to send message: ' + error.text);
+            }
+        );
+    } else {
+        alert('Please fill out all fields.');
+    }
+});
+// Show or hide the Back to Top button based on scroll position
+window.onscroll = function () {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block"; // Show the button
+    } else {
+        backToTopBtn.style.display = "none"; // Hide the button
+    }
+};
+
+// Smooth scroll to the top when the button is clicked
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+    // Translation Data
+const translations = {
+  en: {
+      heroTitle: "Your Trusted Partner in Quality Bricks",
+      heroDescription: "Building a Stronger Tomorrow with High-Quality Bricks",
+      aboutUs: "About Us",
+      aboutText: "At Asha Bricks Industries, we produce high-quality bricks for construction projects of all sizes.",
+      servicesTitle: "Our Services",
+      service1Title: "High-Quality Bricks",
+      service1Text: "We manufacture and supply bricks that meet the highest standards of quality and durability.",
+      service2Title: "Customized Orders",
+      service2Text: "We offer customized brick sizes and designs according to your specific requirements.",
+      service3Title: "On-Time Delivery",
+      service3Text: "We ensure timely delivery of orders, no matter how big or small the project is."
+  },
+  hi: {
+      heroTitle: "गुणवत्ता ईंटों में आपका भरोसेमंद साथी",
+      heroDescription: "उच्च गुणवत्ता वाली ईंटों के साथ एक मजबूत कल का निर्माण करें",
+      aboutUs: "हमारे बारे में",
+      aboutText: "आशा ब्रिक्स इंडस्ट्रीज में, हम सभी आकारों के निर्माण परियोजनाओं के लिए उच्च गुणवत्ता वाली ईंटें बनाते हैं।",
+      servicesTitle: "हमारी सेवाएं",
+      service1Title: "उच्च गुणवत्ता वाली ईंटें",
+      service1Text: "हम उच्चतम गुणवत्ता और टिकाऊपन के मानकों को पूरा करने वाली ईंटों का निर्माण और आपूर्ति करते हैं।",
+      service2Title: "अनुकूलित ऑर्डर",
+      service2Text: "हम आपकी विशेष आवश्यकताओं के अनुसार अनुकूलित ईंट के आकार और डिज़ाइन प्रदान करते हैं।",
+      service3Title: "समय पर वितरण",
+      service3Text: "हम ऑर्डर के समय पर वितरण सुनिश्चित करते हैं, चाहे प्रोजेक्ट बड़ा हो या छोटा।"
+  }
+};
+
+
+// Function to change language
+function changeLanguage(lang) {
+    const elementsToUpdate = {
+      heroTitle: document.querySelector('#hero h1'),
+      heroDescription: document.querySelector('#hero p'),
+      aboutUs: document.querySelector('#about h2'),
+      aboutText: document.querySelector('#about p'),
+      servicesTitle: document.querySelector('#services h2'),
+      service1Title: document.querySelector('#service-card1 h3'),
+      service1Text: document.querySelector('#service-card1 p'),
+      service2Title: document.querySelector('#service-card2 h3'),
+      service2Text: document.querySelector('#service-card2 p'),
+      service3Title: document.querySelector('#service-card3 h3'),
+      service3Text: document.querySelector('#service-card3 p')
+    };
+
+    Object.keys(elementsToUpdate).forEach((key) => {
+        if (elementsToUpdate[key]) {
+            elementsToUpdate[key].textContent = translations[lang][key];
+        }
+    });
+}
+
+// Event Listener for Language Switcher
+document.getElementById('languageSwitcher').addEventListener('change', (event) => {
+    changeLanguage(event.target.value);
+});
