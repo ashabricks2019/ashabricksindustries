@@ -1,27 +1,3 @@
-
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.querySelector('input[name="name"]').value;
-    const email = document.querySelector('input[name="email"]').value;
-    const message = document.querySelector('textarea[name="message"]').value;
-
-    if (name && email && message) {
-        emailjs.send("service_fb3bgpr", "template_wopeunp", {
-            name: name,
-            email: email,
-            message: message,
-        }).then(
-            function(response) {
-                alert('Your message has been sent!');
-            },
-            function(error) {
-                alert('Failed to send message: ' + error.text);
-            }
-        );
-    } else {
-        alert('Please fill out all fields.');
-    }
-});
 // Show or hide the Back to Top button based on scroll position
 window.onscroll = function () {
     const backToTopBtn = document.getElementById("backToTopBtn");
@@ -97,3 +73,4 @@ function changeLanguage(lang) {
 document.getElementById('languageSwitcher').addEventListener('change', (event) => {
     changeLanguage(event.target.value);
 });
+
