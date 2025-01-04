@@ -21,13 +21,13 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 20% 30%;
+    padding: 20px 30px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2% 10% rgb(27, 27, 27);
+    box-shadow: 0 2px 10px rgb(27, 27, 27);
     animation: slideDown 1s ease-out;
 }
 
@@ -43,9 +43,9 @@ nav {
 }
 
 .logo-img {
-    width: 100%;
-    height: 100%;
-    margin-right: 20%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
 .logo-text {
@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 30%;
+    margin-left: 30px;
 }
 
 .nav-links li a {
@@ -68,7 +68,7 @@ nav {
     font-weight: 600;
     font-size: 1.1rem;
     text-transform: uppercase;
-    padding: 10%;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -91,25 +91,25 @@ nav {
 .hero-text h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 20%;
+    margin-bottom: 20px;
     animation: typewriter 5s steps(40) 1s 1 normal both;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 4% solid rgba(255, 255, 255, 0.75); /* Create typing effect */
+    border-right: 4px solid rgba(255, 255, 255, 0.75); /* Create typing effect */
 }
 
 .hero-text p {
     font-size: 1.3rem;
-    margin-bottom: 30%;
+    margin-bottom: 30px;
     animation: fadeInText 3s ease-out;
 }
 
 .cta-button {
     background-color: #279a04;
     color: white;
-    padding: 15% 30%;
+    padding: 15px 30px;
     font-size: 1.2rem;
-    border-radius: 5%;
+    border-radius: 5px;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
     animation: bounceIn 1s ease-out;
@@ -121,7 +121,7 @@ nav {
 /* Gallery Section */
 .gallery-section {
     text-align: center;
-    padding: 50% 20%;
+    padding: 50px 20px;
     background-color: #f8f8f8;
 }
 
@@ -129,7 +129,7 @@ nav {
 .section-title {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 30%;
+    margin-bottom: 30px;
     font-family: 'Arial', sans-serif;
 }
 
@@ -137,13 +137,13 @@ nav {
 .gallery-container {
     display: grid; /* Use grid for rows */
     grid-template-columns: repeat(3, 10fr); /* 3 images per row */
-    gap: 20%; /* Space between images */
+    gap: 20px; /* Space between images */
 }
 
 /* Gallery Item */
 .gallery-item {
     width: 100%; /* Take up full width */
-    height: 300%; /* Fixed height for each image */
+    height: 300px; /* Fixed height for each image */
     overflow: clip;
 }
 
@@ -151,20 +151,20 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8%;
+    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
     transform: scale(1.1); /* Zoom effect on hover */
-    box-shadow: 0 4% 15% rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 
 
 /* About Section */
 .about {
-    padding: 60% 20%;
+    padding: 60px 20px;
     background-color: #ffffff;
     text-align: center;
     animation: fadeInUp 1.5s ease-out;
@@ -172,7 +172,7 @@ nav {
 
 .about h2 {
     font-size: 2.5rem;
-    margin-bottom: 20%;
+    margin-bottom: 20px;
     color: #333;
     animation: fadeInText 2s ease-out;
 }
@@ -184,7 +184,7 @@ nav {
 
 /* Services Section */
 .services {
-    padding: 60% 20%;
+    padding: 60px 20px;
     background-color: #f0f0f0;
     text-align: center;
     animation: fadeInUp 2s ease-out;
@@ -192,7 +192,7 @@ nav {
 
 .services h2 {
     font-size: 2.5rem;
-    margin-bottom: 40%;
+    margin-bottom: 40px;
     color: #333;
     animation: fadeInText 2s ease-out;
 }
@@ -200,15 +200,15 @@ nav {
 .service-cards{
     display: flex;
     justify-content: space-around;
-    gap: 20%;
+    gap: 20px;
     animation: fadeInUp 2.5s ease-out;
 }
 
 .service-card1 {
     background-color: white;
-    padding: 30%;
-    border-radius: 10%;
-    box-shadow: 0 4% 6% rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
     transition: transform 0.3s ease;
@@ -216,11 +216,11 @@ nav {
 }
 
 .service-card1:hover {
-    transform: translateY(-10%);
+    transform: translateY(-10px);
 }
 
 .service-card1 h3 {
-    margin-bottom: 15%;
+    margin-bottom: 15px;
     font-size: 1.8rem;
     color: #333838;
     animation: fadeInText 3s ease-out;
@@ -233,9 +233,9 @@ nav {
 
 .service-card2 {
     background-color: white;
-    padding: 30%;
-    border-radius: 10%;
-    box-shadow: 0 4% 6% rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
     transition: transform 0.3s ease;
@@ -243,11 +243,11 @@ nav {
 }
 
 .service-card2:hover {
-    transform: translateY(-10%);
+    transform: translateY(-10px);
 }
 
 .service-card2 h3 {
-    margin-bottom: 15%;
+    margin-bottom: 15px;
     font-size: 1.8rem;
     color: #333838;
     animation: fadeInText 3s ease-out;
@@ -260,9 +260,9 @@ nav {
 
 .service-card3 {
     background-color: white;
-    padding: 30%;
-    border-radius: 10%;
-    box-shadow: 0 4% 6% rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 30%;
     text-align: center;
     transition: transform 0.3s ease;
@@ -270,11 +270,11 @@ nav {
 }
 
 .service-card3:hover {
-    transform: translateY(-10%);
+    transform: translateY(-10px);
 }
 
 .service-card3 h3 {
-    margin-bottom: 15%;
+    margin-bottom: 15px;
     font-size: 1.8rem;
     color: #333838;
     animation: fadeInText 3s ease-out;
@@ -287,7 +287,7 @@ nav {
 
 /* Contact Section */
 .contact {
-    padding: 160% 120%;
+    padding: 160px 120px;
     background-color: #4e5152;
     text-align: center;
     animation: fadeInUp 3.5s ease-out;
@@ -295,13 +295,13 @@ nav {
 
 .contact h2 {
     font-size: 2.5rem;
-    margin-bottom: 30%;
+    margin-bottom: 30px;
     color: #fff9f9;
     animation: fadeInText 3s ease-out;
 }
 
 .contact-form {
-    max-width: 600%;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -309,25 +309,25 @@ nav {
 }
 .google-form iframe {
     width: 100%;
-    height: 800%;
+    height: 800px;
     border: none;
 }
 .contact-form input,
 .contact-form textarea {
-    padding: 115%;
-    margin-bottom: 120%;
-    border: 1% solid #ddd;
-    border-radius: 8%;
+    padding: 115px;
+    margin-bottom: 120px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     font-size: 1rem;
     width: 100%;
 }
 
 .contact-form button {
-    padding: 15%;
+    padding: 15px;
     background-color: #007bff;
     color: white;
     font-size: 1.2rem;
-    border-radius: 5%;
+    border-radius: 5px;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
 }
@@ -337,9 +337,9 @@ nav {
 }
 .map-container {
     width: 100%;
-    height: 450%;
-    margin: 20% 0;
-    border-radius: 10%;
+    height: 450px;
+    margin: 20px 0;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -352,7 +352,7 @@ iframe {
 footer {
     background-color: #2d2d2d;
     color: white;
-    padding: 20%;
+    padding: 20px;
     text-align: center;
     animation: fadeInUp 4s ease-out;
 }
@@ -370,7 +370,7 @@ footer {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20%);
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
@@ -381,7 +381,7 @@ footer {
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-100px);
     }
     100% {
         opacity: 1;
@@ -415,7 +415,7 @@ footer {
 @keyframes fadeInText {
     0% {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(10px);
     }
     100% {
         opacity: 1;
@@ -424,7 +424,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768%) {
+@media (max-width: 768px) {
     .service-cards {
         flex-direction: column;
         align-items: center;
@@ -441,7 +441,7 @@ footer {
 
     .nav-links li {
         margin-left: 0;
-        margin-bottom: 10%;
+        margin-bottom: 10px;
     }
 }
 .call-btn {
@@ -449,39 +449,39 @@ footer {
     align-items: center;
     background-color: #5dc162; /* blue color for call */
     color: white;
-    padding: 10% 20%;
-    border-radius: 30%;
+    padding: 10px 20px;
+    border-radius: 30px;
     text-decoration: none;
     position: fixed;
-    bottom: 20%; /* Position above WhatsApp button */
-    right: 20%;
-    box-shadow: 0 4% 8% rgba(41, 28, 28, 0.1);
+    bottom: 20px; /* Position above WhatsApp button */
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(41, 28, 28, 0.1);
     transition: all 0.3s ease-in-out;
 }
 
 .call-btn:hover {
     background-color: #d41414; /* Darker Green on hover */
-    transform: translateY(-3%);
+    transform: translateY(-3px);
 }
 
 .call-icon {
-    width: 30%; /* Icon size */
-    height: 30%;
-    margin-right: 10%;
+    width: 30px; /* Icon size */
+    height: 30px;
+    margin-right: 10px;
 }
 /* Floating Facebook Button */
 .floating-facebook {
     position: fixed;
-    bottom: 150%; /* Adjust for vertical positioning */
-    right: 20%;   /* Adjust for horizontal positioning */
+    bottom: 150px; /* Adjust for vertical positioning */
+    right: 20px;   /* Adjust for horizontal positioning */
     z-index: 1000; /* Ensures it floats above other elements */
 }
 
 .floating-facebook img {
-    width: 50%; /* Adjust icon size */
-    height: 30%;
+    width: 50px; /* Adjust icon size */
+    height: 30px;
     border-radius: 50%;
-    box-shadow: 0 4% 6% rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -493,42 +493,42 @@ footer {
     align-items: center;
     background-color: #0c57d7; /* blue color for call */
     color: white;
-    padding: 10% 20%;
-    border-radius: 30%;
+    padding: 10px 20px;
+    border-radius: 30px;
     text-decoration: none;
     position: fixed;
-    bottom: 80%; /* Position above WhatsApp button */
-    right: 20%;
-    box-shadow: 0 4% 8% rgba(41, 28, 28, 0.1);
+    bottom: 80px; /* Position above WhatsApp button */
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(41, 28, 28, 0.1);
     transition: all 0.3s ease-in-out;
 }
 .facebook-icon {
-    width: 30%; /* Icon size */
-    height: 30%;
-    margin-right: 10%;
+    width: 30px; /* Icon size */
+    height: 30px;
+    margin-right: 10px;
 }
 .floating-facebook:hover {
     background-color: #009cbf; /* Darker blue on hover */
-    transform: translateY(-3%);
+    transform: translateY(-3px);
 }
 /* Back to Top Button */
 #backToTopBtn {
     display: none; /* Initially hidden */
     position: fixed;
-    bottom: 150%; /* Distance from the bottom */
-    right: 20%; /* Distance from the right */
+    bottom: 150px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
     z-index: 1000; /* Make sure it's on top of other elements */
-    width: 50%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
     background-color: #007BFF; /* Button background color */
     color: white;
-    font-size: 25%;
+    font-size: 25px;
     text-align: center;
-    line-height: 50%; /* Center the arrow */
+    line-height: 50px; /* Center the arrow */
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 4% 6% rgba(255, 1, 1, 0.2);
+    box-shadow: 0 4px 6px rgba(255, 1, 1, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -539,83 +539,19 @@ footer {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 30%;
+    margin: 30px;
   }
   
   .language-btn {
-    margin-left: 20%;
-    padding: 8% 12%;
-    font-size: 16%;
-    border-radius: 5%;
-    border: 1% solid #ddd;
+    margin-left: 20px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     cursor: pointer;
 }
 
 .language-btn:hover {
     background-color: #007bff;
     color: white;
-}
-/* General Mobile Styles */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-
-    header {
-        padding: 10px 15px;
-    }
-
-    .nav-links {
-        flex-direction: column; /* Stack navigation links */
-        align-items: flex-start;
-    }
-
-    .nav-links li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .hero {
-        height: auto; /* Allow hero section to adjust height */
-        padding: 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .service-cards {
-        flex-direction: column; /* Stack service cards */
-        gap: 15px;
-    }
-
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller images on mobile */
-    }
-
-    iframe {
-        width: 100%;
-        height: auto; /* Adjust iframe size */
-    }
-
-    #backToTopBtn {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-}
-.service-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.service-card1, .service-card2, .service-card3 {
-    flex: 1 1 100%; /* Full width on smaller screens */
-    max-width: 300px; /* Limit the size */
-}
-img, iframe {
-    max-width: 100%;
-    height: auto;
 }
