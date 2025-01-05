@@ -90,19 +90,21 @@ function isMobileDevice() {
     return /Mobi|Android|iPhone|iPad|iPod/.test(navigator.userAgent);
 }
 
-// Show the mobile warning if on mobile
-function showMobileWarning() {
+// Block access for mobile devices
+function enforceDesktopMode() {
+    const warning = document.getElementById("mobile-warning");
+    const mainContent = document.getElementById("main-content");
+
     if (isMobileDevice()) {
-        const warning = document.getElementById("mobile-warning");
+        // Show the warning overlay and hide the main content
         warning.style.display = "block";
+        mainContent.style.display = "none";
+    } else {
+        // Allow access for desktop users
+        warning.style.display = "none";
+        mainContent.style.display = "block";
     }
 }
 
-// Close the warning overlay
-function closeWarning() {
-    const warning = document.getElementById("mobile-warning");
-    warning.style.display = "none";
-}
-
 // Run the check when the page loads
-document.addEventListener("DOMContentLoaded", showMobileWarning);
+document.addEventListener("DOMContentLoaded", enforceDesktopMode);
