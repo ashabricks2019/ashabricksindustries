@@ -74,3 +74,14 @@ document.getElementById('languageSwitcher').addEventListener('change', (event) =
     changeLanguage(event.target.value);
 });
 
+function openModal(imgElement) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = imgElement.src; // Use the source of the clicked image
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
