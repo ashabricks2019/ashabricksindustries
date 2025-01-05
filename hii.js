@@ -85,3 +85,24 @@ function closeModal() {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";
 }
+// Detect if the user is on a mobile device
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/.test(navigator.userAgent);
+}
+
+// Show the mobile warning if on mobile
+function showMobileWarning() {
+    if (isMobileDevice()) {
+        const warning = document.getElementById("mobile-warning");
+        warning.style.display = "block";
+    }
+}
+
+// Close the warning overlay
+function closeWarning() {
+    const warning = document.getElementById("mobile-warning");
+    warning.style.display = "none";
+}
+
+// Run the check when the page loads
+document.addEventListener("DOMContentLoaded", showMobileWarning);
