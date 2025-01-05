@@ -558,42 +558,6 @@ body {
     background-color: #007bff;
     color: white;
 }
-/* Modal Styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    overflow: auto;
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-}
-
-.modal .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.modal .close:hover {
-    color: #bbb;
-    text-decoration: none;
-}
 /* Mobile Warning Overlay */
 .mobile-warning-overlay {
     display: none; /* Initially hidden */
@@ -602,8 +566,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9); /* Fully opaque background */
+    z-index: 10000;
     text-align: center;
     color: white;
     padding: 20px;
@@ -615,30 +579,22 @@ body {
     transform: translateY(-50%);
     max-width: 500px;
     margin: auto;
-    background-color: #333;
-    padding: 20px;
+    background-color: #222;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .mobile-warning-content h2 {
     margin-bottom: 15px;
+    font-size: 2rem;
 }
 
 .mobile-warning-content p {
-    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
-.mobile-warning-content button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+#main-content {
+    display: block; /* Default to visible */
 }
 
-.mobile-warning-content button:hover {
-    background-color: #0056b3;
-}
