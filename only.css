@@ -597,4 +597,11 @@ body {
 #main-content {
     display: block; /* Default to visible */
 }
+.desktop-instructions {
+    max-width: 100%; /* Ensure the image scales on smaller screens */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
 
