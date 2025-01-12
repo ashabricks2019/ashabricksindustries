@@ -108,3 +108,12 @@ function enforceDesktopMode() {
 
 // Run the check when the page loads
 document.addEventListener("DOMContentLoaded", enforceDesktopMode);
+window.addEventListener('load', () => {
+  gsap.from('.content', { 
+    y: 50, 
+    opacity: 0, 
+    duration: 1, 
+    ease: 'power3.out' 
+  });
+});
+
