@@ -1,7 +1,7 @@
 // Show or hide the Back to Top button based on scroll position
 window.onscroll = function () {
     const backToTopBtn = document.getElementById("backToTopBtn");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         backToTopBtn.style.display = "block"; // Show the button
     } else {
         backToTopBtn.style.display = "none"; // Hide the button
