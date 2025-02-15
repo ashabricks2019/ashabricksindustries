@@ -75,7 +75,27 @@ nav {
 .logo-text a:hover {
     color: #ff6600;
 }
+.logo-text {
+    display: flex;
+    list-style: none;
+}
 
+.logo-textli {
+    margin-left: 30px;
+}
+
+.logo-texts li a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.logo-text li a:hover {
+    color: #ff6600;
+}
 .nav-links {
     display: flex;
     list-style: none;
