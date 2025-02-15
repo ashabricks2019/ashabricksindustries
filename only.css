@@ -67,6 +67,7 @@ nav {
     align-items: center;
     display: grid;
     grid-template-columns: auto 1fr;
+    hover: #ff6600;
 }
 .logo-text a:hover {
     color: #ff6600;
