@@ -68,8 +68,8 @@ nav {
     display: grid;
     grid-template-columns: auto 1fr;
 }
-.logo-text li a:hover {
-    color: #ff6600
+.logo-text a:hover {
+    color: #ff6600;
 }
 
 .nav-links {
