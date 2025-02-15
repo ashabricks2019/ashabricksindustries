@@ -47,6 +47,9 @@ nav {
     color: #ff6600;
     color: white;
 }
+.logo li a:hover {
+    color: #ff6600
+}
 
 .logo-img {
     width: 100px;
