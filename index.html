@@ -67,76 +67,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asha Bricks Industries</title>
     <style>
-        /* Gallery Section */
-        .gallery-section {
+        * {
+            box-sizing: border-box;
+        }
+        body {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
         }
-
-        .section-title {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 30px;
-            font-family: 'Arial', sans-serif;
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
         }
-
-        /* Gallery Container */
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Makes the grid responsive */
-            gap: 20px;
-            padding: 0 20px;
+        .slides {
+            display: none;
         }
-
-        /* Gallery Item */
-        .gallery-item img {
+        img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
+            border-radius: 10px;
         }
-
-        .gallery-item img:hover {
-            transform: scale(1.1); /* Zoom effect on hover */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            outline: none;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
         }
     </style>
 </head>
 <body>
 
 <!-- Gallery Section -->
-<section id="gallery" class="gallery-section">
+<section id="gallery" class="slideshow-container">
     <h2 class="section-title">Our Gallery</h2>
     <div class="gallery-container">
-        <div class="gallery-item">
+        <div class="slides">
             <img src="318170926_3278905412420128_5741165591374721438_n.jpg" alt="ASHA BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="395129610_3500303533613647_7955242248809261397_n.jpg" alt="OUR BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="395054201_3500303593613641_2602876814914636053_n.jpg" alt="QAULITY BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="1729949476845.jpg" alt="BEST BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="1729949476861.jpg" alt="BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="241142126_2933819153595424_7458282919628914341_n.jpg" alt="BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="245760101_2954576421519697_1750579752352905235_n.jpg" alt="BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="273473417_3046080412369297_5026659229684988523_n.jpg" alt="BRICKS">
         </div>
-        <div class="gallery-item">
+        <div class="slides">
             <img src="1729949476952.jpg" alt="BRICKS">
         </div>
     </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 3 seconds
+        }
+
+        function changeSlide(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
     <!-- Modal -->
 <div id="imageModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
