@@ -161,44 +161,8 @@ nav {
 .cta-button:hover {
     background-color: #c80000;
 }
-/* Gallery Section */
-.gallery-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f8f8f8;
-}
 
-/* Section Title */
-.section-title {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Gallery Container */
-.gallery-container {
-    display: grid; /* Use grid for rows */
-    grid-template-columns: repeat(3, 10fr); /* 3 images per row */
-    gap: 20px; /* Space between images */
-}
-
-/* Gallery Item */
-.gallery-item {
-    width: 100%; /* Take up full width */
-    height: 300px; /* Fixed height for each image */
-    overflow: clip;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
+.slides:hover {
     transform: scale(1.1); /* Zoom effect on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
