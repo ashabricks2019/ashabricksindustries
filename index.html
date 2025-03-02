@@ -153,7 +153,7 @@ font-size: 2.5rem;
     <script>
         let slideIndex = 0;
         let slides = document.getElementsByClassName("slides");
-        let timer; 
+        let timer;
 
         function showSlides() {
             for (let i = 0; i < slides.length; i++) {
@@ -175,6 +175,14 @@ font-size: 2.5rem;
             }
             slides[slideIndex - 1].style.display = "block";
             timer = setTimeout(showSlides, 3000); // Restart auto-play
+        }
+
+        function pauseSlideshow() {
+            clearTimeout(timer); // Pause slideshow on hover
+        }
+
+        function resumeSlideshow() {
+            timer = setTimeout(showSlides, 3000); // Resume slideshow on mouse out
         }
 
         showSlides(); // Start slideshow
