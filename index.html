@@ -152,23 +152,32 @@ font-size: 2.5rem;
     </div>
     <script>
         let slideIndex = 0;
-        showSlides();
+        let slides = document.getElementsByClassName("slides");
+        let timer; 
 
         function showSlides() {
-            let slides = document.getElementsByClassName("slides");
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             slideIndex++;
             if (slideIndex > slides.length) { slideIndex = 1; }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
+            timer = setTimeout(showSlides, 3000); // Auto-slide every 3 seconds
         }
 
         function changeSlide(n) {
-            slideIndex += n - 1;
-            showSlides();
+            clearTimeout(timer); // Stop auto-play when button is clicked
+            slideIndex += n;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            if (slideIndex < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            timer = setTimeout(showSlides, 3000); // Restart auto-play
         }
+
+        showSlides(); // Start slideshow
     </script>
     <!-- Modal -->
 <div id="imageModal" class="modal">
