@@ -146,6 +146,9 @@ font-size: 2.5rem;
         <div class="slides">
             <img src="1729949476952.jpg" alt="BRICKS" width="400" height="500">
         </div>
+    <!-- Navigation buttons -->
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
     </div>
     <script>
         let slideIndex = 0;
@@ -159,7 +162,7 @@ font-size: 2.5rem;
             slideIndex++;
             if (slideIndex > slides.length) { slideIndex = 1; }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 3 seconds
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
 
         function changeSlide(n) {
